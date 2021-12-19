@@ -11,6 +11,12 @@
 		A1949FE0276F426600449996 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1949FDF276F426600449996 /* ContentView.swift */; };
 		A1949FE2276F426700449996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1949FE1276F426700449996 /* Assets.xcassets */; };
 		A1949FE5276F426700449996 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1949FE4276F426700449996 /* Preview Assets.xcassets */; };
+		A1949FEF276F433900449996 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1949FEE276F433900449996 /* Home.swift */; };
+		A1949FF1276F47FA00449996 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1949FF0276F47FA00449996 /* TabButton.swift */; };
+		A1949FF3276F519300449996 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1949FF2276F519300449996 /* Item.swift */; };
+		A1949FF5276F5A2A00449996 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1949FF4276F5A2A00449996 /* CardView.swift */; };
+		A1949FF7276F5E5C00449996 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1949FF6276F5E5C00449996 /* Detail.swift */; };
+		A1949FF9276FAEA900449996 /* Customshape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1949FF8276FAEA900449996 /* Customshape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		A1949FE1276F426700449996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1949FE4276F426700449996 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1949FE6276F426700449996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1949FEE276F433900449996 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A1949FF0276F47FA00449996 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		A1949FF2276F519300449996 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A1949FF4276F5A2A00449996 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A1949FF6276F5E5C00449996 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		A1949FF8276FAEA900449996 /* Customshape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customshape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,8 @@
 		A1949FDC276F426600449996 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				A1949FED276F431100449996 /* Model */,
+				A1949FEC276F42E800449996 /* View */,
 				A1949FDD276F426600449996 /* SpecsApp.swift */,
 				A1949FDF276F426600449996 /* ContentView.swift */,
 				A1949FE1276F426700449996 /* Assets.xcassets */,
@@ -67,6 +81,26 @@
 				A1949FE4276F426700449996 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1949FEC276F42E800449996 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1949FEE276F433900449996 /* Home.swift */,
+				A1949FF0276F47FA00449996 /* TabButton.swift */,
+				A1949FF4276F5A2A00449996 /* CardView.swift */,
+				A1949FF6276F5E5C00449996 /* Detail.swift */,
+				A1949FF8276FAEA900449996 /* Customshape.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1949FED276F431100449996 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1949FF2276F519300449996 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1949FF9276FAEA900449996 /* Customshape.swift in Sources */,
+				A1949FF3276F519300449996 /* Item.swift in Sources */,
+				A1949FF7276F5E5C00449996 /* Detail.swift in Sources */,
 				A1949FE0276F426600449996 /* ContentView.swift in Sources */,
+				A1949FF1276F47FA00449996 /* TabButton.swift in Sources */,
+				A1949FEF276F433900449996 /* Home.swift in Sources */,
+				A1949FF5276F5A2A00449996 /* CardView.swift in Sources */,
 				A1949FDE276F426600449996 /* SpecsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Specs/Preview Content\"";
 				DEVELOPMENT_TEAM = 85X35QY5JD;
@@ -279,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.John.Specs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Specs/Preview Content\"";
 				DEVELOPMENT_TEAM = 85X35QY5JD;
@@ -301,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.John.Specs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
